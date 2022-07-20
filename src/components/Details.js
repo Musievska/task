@@ -6,6 +6,7 @@ import EditForm from './EditForm';
 import Header from './Header';
 
 const Details = () => {
+
     const [buildings, setBuildings] = useState(data);
     const [addFormData, setAddFormData] = useState({
         id: "",
@@ -58,6 +59,7 @@ const Details = () => {
             location: addFormData.location,
             image: addFormData.image,
         };
+
 
         const newBuildings = [...buildings, newBuilding];
         setBuildings(newBuildings);
@@ -144,14 +146,12 @@ const Details = () => {
                     <input
                         type="text"
                         name="location"
-                        required="required"
                         placeholder="enter location..."
                         onChange={handleAddFormChange}
                     />
                     <input
                         type="text"
                         name="image"
-                        required="required"
                         placeholder="enter image..."
                         onChange={handleAddFormChange}
                     />
