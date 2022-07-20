@@ -10,12 +10,12 @@ const Table = ({ building, changeHandler, deleteHandler }) => {
             <td ><img src={building.image} alt="" height="100" width="100"></img></td>
             <td>
                 <button
-                    type="button"
+                    type="edit"
                     onClick={(event) => changeHandler(event, building)}
                 >
                     Edit
                 </button>
-                <button type="button" onClick={() => deleteHandler(building.id)}>
+                <button type="delete" onClick={() => deleteHandler(building.id)}>
                     Delete
                 </button>
             </td>

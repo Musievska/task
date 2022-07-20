@@ -116,10 +116,50 @@ const Details = () => {
     return (
         <>
         <Header/>
-        <div className="app-container">
-            <form onSubmit={handleEditFormSubmit}>
+            <div className="app-container">
+                <h3>Add Buildings</h3>
+                <form onSubmit={handleAddFormSubmit}>
+                    <input
+                        type="number"
+                        name="id"
+                        required="required"
+                        placeholder="ID"
+                        onChange={handleAddFormChange}
+                    />
+                    <input
+                        type="text"
+                        name="name"
+                        minLength="3"
+                        required="required"
+                        placeholder="enter a name..."
+                        onChange={handleAddFormChange}
+                    />
+                    <input
+                        type="number"
+                        name="area"
+                        required="required"
+                        placeholder="enter an area..."
+                        onChange={handleAddFormChange}
+                    />
+                    <input
+                        type="text"
+                        name="location"
+                        required="required"
+                        placeholder="enter location..."
+                        onChange={handleAddFormChange}
+                    />
+                    <input
+                        type="text"
+                        name="image"
+                        required="required"
+                        placeholder="enter image..."
+                        onChange={handleAddFormChange}
+                    />
+                    <button type="submit">Add</button>
+                </form>
+                <form onSubmit={handleEditFormSubmit}>
+                    <h3>Buildings</h3>
                     <table>
-                        <caption>Buildings List</caption>
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -149,48 +189,7 @@ const Details = () => {
                             </>
                         ))}
                     </tbody>
-                </table>
-            </form>
-
-            <h3>Add Buildings</h3>
-            <form onSubmit={handleAddFormSubmit}>
-                <input
-                    type="number"
-                    name="id"
-                    required="required"
-                    placeholder="ID"
-                    onChange={handleAddFormChange}
-                />
-                <input
-                    type="text"
-                    name="name"
-                    minLength="3"
-                    required="required"
-                    placeholder="enter a name..."
-                    onChange={handleAddFormChange}
-                />
-                <input
-                    type="number"
-                    name="area"
-                    required="required"
-                    placeholder="enter an area..."
-                    onChange={handleAddFormChange}
-                />
-                <input
-                    type="text"
-                    name="location"
-                    required="required"
-                    placeholder="enter location..."
-                    onChange={handleAddFormChange}
-                />
-                <input
-                    type="text"
-                    name="image"
-                    required="required"
-                    placeholder="enter image..."
-                    onChange={handleAddFormChange}
-                />
-                <button type="submit">Add</button>
+                        </table>
             </form>
             </div>
             </>
