@@ -1,0 +1,31 @@
+
+    [
+        {
+            "id": 1,
+            "name": "Windsor",
+            "area": "200",
+            "location": "London",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Windsor-castle.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Astoria",
+            "area": "300",
+            "location": "Paris",
+            "image": "https://www.turpravda.com/fr/parizh/Astoria_Opera-h10236.html#photo=3806980"
+        },
+        {
+            "id": 3,
+            "name": "England",
+            "area": "600",
+            "location": "London",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Windsor-castle.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Windsor",
+            "area": "50000",
+            "location": "London",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Windsor-castle.jpg"
+        }
+    ]
